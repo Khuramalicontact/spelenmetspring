@@ -21,20 +21,31 @@ public class PersonDaoImpl implements PersonDao {
 
     @Override
     public Person readPerson(int id) {
-
-        return null;
-    }
+        for (int i = 0; i < persondb.size(); i++) {
+            if (persondb.get(i).getId() == id) {
+                return persondb.get(i);
+            }
+        }
+            return persondb.get(id);
+        }
 
     @Override
     public boolean updatePerson(Person person) {
-
-        return false;
+        for(int i = 0; i < persondb.size(); i++){
+            if(persondb.get(i).getId() == person.getId()){
+                persondb.set(i,person);
+            }
+        }
+        return true;
     }
 
     @Override
     public boolean deletePerson(Person person) {
-
-        person.getId().
-        return false;
+        for(int i = 0; i < persondb.size(); i++){
+            if(persondb.get(i).getId() == person.getId()){
+                persondb.remove(person);
+            }
+        }
+        return true;
     }
 }

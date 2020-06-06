@@ -14,7 +14,7 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public Person getPerson(int id) {
-
+        return null;
     }
 
     @Override
@@ -24,5 +24,6 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public void addPersonList(List<Person> personList) {
+        allPersons.addAll(personList);
     }
 }
