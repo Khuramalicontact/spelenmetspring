@@ -13,17 +13,16 @@ public class PersonServiceImpl implements PersonService {
 
 
     @Override
-    public Person getPerson(int person) {
-        return null;
+    public Person getPerson(int id) {
+
     }
 
     @Override
     public void addPerson(Person person) {
-
+        allPersons.add(person);
     }
 
     @Override
     public void addPersonList(List<Person> personList) {
-
     }
 }

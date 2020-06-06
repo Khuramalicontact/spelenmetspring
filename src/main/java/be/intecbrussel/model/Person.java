@@ -14,6 +14,11 @@ public class Person {
         return true;
     }
 
+    public int hashCode(){
+        return hashCode();
+    }
+
+
     public String getLastName() {
         return lastName;
     }
