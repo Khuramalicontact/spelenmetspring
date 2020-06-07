@@ -15,8 +15,14 @@ public class PersonDaoImpl implements PersonDao {
 
     @Override
     public boolean createPerson(Person person) {
-        persondb.add(person);
-        return true;
+        for(int i = 0; i < persondb.size(); i++){
+            if(persondb.get(i).getId() == person.getId()){
+                return false;
+            }else {
+                persondb.add(person);
+
+            }
+        }return true;
     }
 
     @Override
@@ -26,7 +32,7 @@ public class PersonDaoImpl implements PersonDao {
                 return persondb.get(i);
             }
         }
-            return persondb.get(id);
+            return null;
         }
 
     @Override
@@ -34,18 +40,25 @@ public class PersonDaoImpl implements PersonDao {
         for(int i = 0; i < persondb.size(); i++){
             if(persondb.get(i).getId() == person.getId()){
                 persondb.set(i,person);
+                return true;
             }
         }
-        return true;
+        return false;
     }
 
     @Override
     public boolean deletePerson(Person person) {
         for(int i = 0; i < persondb.size(); i++){
             if(persondb.get(i).getId() == person.getId()){
-                persondb.remove(person);
+                persondb.remove(i);
+                return true;
             }
         }
-        return true;
+        return false;
+    }
+
+    @Override
+    public List<Person> getAllPersons() {
+        return persondb;
     }
 }

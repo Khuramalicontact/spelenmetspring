@@ -4,20 +4,23 @@ import java.time.LocalDate;
 
 public class Person {
 
+    private String firstName;
     private String lastName;
     private LocalDate dateOfBirth;
     private int id;
-    private String firstName;
 
 
-    public boolean equals(Object obj){
-        return true;
+
+    public Person(int id) {
+        this.id = id;
     }
 
-    public int hashCode(){
-        return hashCode();
+    public Person(String lastName, LocalDate dateOfBirth, int id, String firstName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+        this.id = id;
     }
-
 
     public String getLastName() {
         return lastName;
@@ -60,4 +63,12 @@ public class Person {
                 ", firstName='" + firstName + '\'' +
                 '}';
     }
+
+//  //  public boolean equals(Object obj){
+//        return true;
+//    }
+//
+//    public int hashCode(){
+//        return hashCode();
+//    }
 }

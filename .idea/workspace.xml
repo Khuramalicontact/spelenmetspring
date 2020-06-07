@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7b75be31-21fa-476a-9ed5-24574e7cf447" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/data/PersonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/data/PersonDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/data/implementations/PersonDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/data/implementations/PersonDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/model/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/model/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/service/PersonService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/intecbrussel/service/implementations/PersonServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/be/intecbrussel/service/implementations/PersonServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +39,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.intecbrussel.Main" />
+      <module name="spelenmetspring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.intecbrussel.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -45,7 +69,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591448347050</updated>
-      <workItem from="1591448350531" duration="5992000" />
+      <workItem from="1591448350531" duration="6189000" />
+      <workItem from="1591549931399" duration="3641000" />
     </task>
     <servers />
   </component>
@@ -53,14 +78,35 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1591450639128">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1591552019979">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591450639128" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1591552019979" />
     <state x="590" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1591450208993">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="590" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824/1920.0.1280.680@0.0.1536.824" timestamp="1591450208993" />
+    <state width="1493" height="249" key="GridCell.Tab.0.bottom" timestamp="1591553577058">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="249" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591553577058" />
+    <state width="1493" height="249" key="GridCell.Tab.0.center" timestamp="1591553577058">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="249" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591553577058" />
+    <state width="1493" height="249" key="GridCell.Tab.0.left" timestamp="1591553577057">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="249" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591553577057" />
+    <state width="1493" height="249" key="GridCell.Tab.0.right" timestamp="1591553577058">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="249" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591553577058" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1591549932782">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1591549932782" />
     <state x="209" y="114" key="new project wizard" timestamp="1591450000868">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
